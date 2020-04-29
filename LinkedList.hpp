@@ -97,6 +97,25 @@ class LinkedList {
 			}
 		}
 
+		void print_list_backward_naive()
+		{
+			if(nHead == NULL) return;
+			node * nBack = NULL;
+			node * nBuffer = nHead;
+		
+			while(nBack != nHead)
+			{
+				while(nBuffer->next != nBack)
+				{
+					nBuffer = nBuffer->next;
+				}
+				std::cout << nBuffer->val << "\n";
+				nBack = nBuffer;
+				nBuffer = nHead;
+			}
+		}
+
+
 	private:
 		node * nHead;
 };

@@ -29,10 +29,7 @@ int main(int argv, char * argc[]) {
 	std::cout << "pushed 4,5,6 front \n";
 	llStart.print_list_forward();
 
-	llStart.pop_back();
-	llStart.pop_back();
-	std::cout << "popped back twice \n";
-	llStart.print_list_forward();
-
+	std::cout << "Naive Implementation Backward\n";
+	llStart.print_list_backward_naive();
 	return 0;
 }
