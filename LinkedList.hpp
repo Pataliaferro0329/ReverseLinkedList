@@ -115,6 +115,24 @@ class LinkedList {
 			}
 		}
 
+		void print_list_backward_recursive()
+		{
+			if(nHead == NULL) return;
+			node * nBuffer = nHead;
+			print_list_backward_recursive_body(nBuffer);
+		}
+
+		void print_list_backward_recursive_body(node * nBuffer)
+		{
+			if(nBuffer->next == NULL) 
+			{
+				std::cout << nBuffer->val << "\n";
+				return;
+			}
+			print_list_backward_recursive_body(nBuffer->next);
+			std::cout << nBuffer->val << "\n";
+		}
+
 
 	private:
 		node * nHead;

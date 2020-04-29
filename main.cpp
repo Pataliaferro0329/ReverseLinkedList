@@ -29,7 +29,7 @@ int main(int argv, char * argc[]) {
 	std::cout << "pushed 4,5,6 front \n";
 	llStart.print_list_forward();
 
-	std::cout << "Naive Implementation Backward\n";
-	llStart.print_list_backward_naive();
+	std::cout << "Recursive Implementation Backward\n";
+	llStart.print_list_backward_recursive();
 	return 0;
 }
