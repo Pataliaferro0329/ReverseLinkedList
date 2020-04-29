@@ -1,1 +1,7 @@
-This is a coding challenge
+This is the coding prompt:
+
+Using whatever programming techniques you know, 
+write the cleanest possible function you can think of to 
+print a singly linked list in reverse. 
+The format for the node should be a struct containing an 
+integer value, val, and a next pointer to the following node. 
